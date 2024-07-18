@@ -1,0 +1,46 @@
+@media  screen and (max-width:768px)
+ {
+    .navbar-container .menu-items{
+        display: none;
+    }
+    .navbar-container .navbar-toggler{
+        display: block;
+    }
+    .navbar-container .menu-items.active{
+        display: block;
+        position: fixed;
+        background-color: var(--white);
+        top: 0;
+        left: 0;
+        width: 30%;
+        padding: 20px;
+        height: 100%;
+        animation: slide 2s linear;
+    }
+    .navbar-container .menu-items.active .cls{
+        float: right;
+        color: var(--danger);
+    }
+    .navbar-container .menu-items.active li{
+        margin-top: 10px;
+    }
+    /* show-case */
+    .showcase-container .main-title{
+        font-size: 2.5rem;
+        color: var(--primary);
+    }
+   /* food-container */
+    .food-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@keyframes slide {
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+    
+}

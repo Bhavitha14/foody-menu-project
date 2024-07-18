@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 60%;
+            background-color: #ccc;
+            counter-reset: ch;
+        }
+        h3{
+            color:orangered;
+        }
+        h5{color:darkgreen;}
+        h3::before{
+            counter-increment: ch;
+            content: counter(ch) ". ";
+            margin-left:5px ;
+            color: blue;
+        }
+        h3{
+            counter-reset: tp;
+        }
+        h5::before{
+            counter-increment: tp;
+            content: counter(ch)"." counter(tp)" ";
+            margin-left:30px ;
+            color: red;
+
+        }
+        h5{
+            counter-reset: subt;
+        }
+        p::before{
+            counter-increment: subt;
+            content: counter(ch)"." counter(tp) " ."  counter(subt) " ";
+            margin-left: 50px;
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Table of contents</h1>
+        <div class="box">
+            <h3>HTML</h3>
+                <h5>header tags</h5>
+                   <p>h1-h6</p>
+                <h5>Format tags</h5>
+                   <p>paragaph</p>
+                   <p>Bold</p>
+                   <p>itallic</p>
+                   <p>underline</p>
+                <h5>Table tags</h5>
+                   <p>thead ,tbody,tfoot</p>
+                   <p>tr td</p>
+                   <p> td ,th ,tags</p>
+                <h5> list tags</h5>
+                    <p>ordered list</p>
+                    <p>unordered list</p>
+                    <p>description list</p>
+                <h5> forms tags</h5>
+            <h3>CSS</h3> 
+                <h5>selectors</h5>
+                   <p>universal selectors</p>
+                   <p>default selectors</p>
+                   <p>combinators</p>
+                  <p> Group selectors</p>
+                <h5>Background</h5>  
+                    <p>background-clr</p>
+                    <p>background-url</p>
+                   <p>background-image</p>
+                <h5>Font</h5>
+                <h5>Text</h5>
+                 <p>text-transform</p>  
+                 <p>text-decoration</p>  
+            <h3>Java Script</h3>
+               <h5>Varaiable</h5>
+               <h5>Conditional and Looping statements</h5>
+                  <p>If condition</p>
+                  <p>If and else  condition</p>
+                  <p>if ,else if and else condition</p>
+                  <p>switch case condition</p>
+            <h3>React</h3>
+                <h5>components</h5>
+                <h5>state and pros</h5>
+                <h5>Life cycle Methods</h5>
+                <h5>Hooks</h5>
+                   <p>state hook</p>
+                   <p>effect hook</p>
+                   <p>performance hook</p>
+                   <p>context hook</p>     
+            
+        </div>
+    </div>
+</body>
+</html>

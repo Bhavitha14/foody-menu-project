@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Css Variables */
+:root{
+    --primary:#16a083;
+    --hover:#119764;
+    --white:#fff;
+    --dark:#222;
+    --bg-light:#aaa;
+    --unchecked:#aaa;
+    --danger:#cc1717;
+
+    --font:"Roboto",sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* common classes */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.btn{
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    outline: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-align: center;
+
+
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+.btn-primary:hover{
+    background-color: var(--hover);
+}
+.btn-small{
+    width: 15%;
+}
+.btn-large{
+    width: 25%;
+}
+.btn-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* menu css */
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: var(--white);
+    width: 100%;
+    color: var(--dark);
+    height: 60px;
+    opacity: 1;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+
+}
+
+.menu-items li{
+    margin-left: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.navbar-container a{
+    text-decoration: none;
+}
+
+.navbar-container .logo{
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.menu-items li a{
+    color: var(--dark);
+    font-weight: 500;
+    transition: color 0.4s ease-in;
+}
+
+.menu-items li a:hover{
+    color: var(--hover);
+}
+.navbar-toggler{
+    display: none;
+}
+/* showcase (home section) */
+.showcase-area{
+    height: 100vh;
+    background: linear-gradient(rgba(240,240,240,0.14),rgba(255,255,255,0.336)),url("https://i.postimg.cc/wT3TQS3V/header-image2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.showcase-area .showcase-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.1rem;
+    font-size: 1.4rem;
+}
+.showcase-container .main-title{
+    font-size: 4rem;
+    color: var(--primary);
+}
+/* }about section */
+#about{
+    width: 100%;
+    background-color: var(--white);
+    padding: 50px 0;
+}
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+#about h2 {
+    font-size: 2.3rem;
+    color: var(--primary);
+}
+#about p {
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+#about .small {
+    font-size: 1.3rem;
+}
+.about-text{
+    flex: 1 1 440px;
+    padding: 30px;
+    margin: auto;
+   
+}
+.about-img{
+    flex: 1 1 400px;
+    padding: 30px;
+}
+.about-img img{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 5px;
+}
+/* food category */
+#food-category{
+    padding: 5rem 0 10rem 0;
+}
+#food-category{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: var(--primary);
+    text-transform : uppercase;
+}
+.food-container{
+    display: flex;
+    justify-content: space-between;
+}
+.food-container img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.img-container{
+    margin: 0px 1rem;
+    position: relative;
+}
+.img-content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    z-index:2;
+    text-align: center;
+    cursor: pointer;
+}
+.img-container::after{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7)!important;
+    opacity: 0;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: 100% 100%; 
+    transition: all 0.3s ease-in-out;
+}
+.img-container:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
+}
+.img-container:hover .img-content{
+    opacity: 1;
+    top: 40%;
+}
+.img-content h3{
+    color: #fff;
+
+}

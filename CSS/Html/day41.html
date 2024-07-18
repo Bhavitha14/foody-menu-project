@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>input types</h1>
+    <form action="">
+
+        <label for="">user name</label>
+        <input type="text" minlength="3" maxlength="10">
+        <br>
+         <label for=""> number input :</label>
+         <input type="number" name="" id="" required>
+
+         <br>
+         <label for="">email         :</label>
+         <input type="email" name="" id="" required>
+
+         <br>
+         <label for="">password       :</label>
+         <input type="password" name="" id="">
+         
+         <br>
+         <hr>
+         <label for="">date</label>
+         <input type="date" name="" id="">
+         <br>
+         <label for="">datetime(manually)</label>
+         <input type="datetime">
+         <br><label for="">datetime_local</label>
+         <input type="datetime-local">
+         <br>
+         <label for="">week</label>
+         <input type="week">
+
+         <br>
+         <label for="">month</label>
+         <input type="month">
+
+         <br>
+         <label for="">time</label>
+         <input type="time">
+         
+         <br>
+         <hr>
+         <label for="">search(Hello world ->hello+world ->query)</label>
+         <input type="search" name="" id="">
+         
+         <br>
+         <label for="">url</label>
+         <input type="url" name="" id="" placeholder="https://www.domain.com">
+
+         <br>
+         <label for="">color</label>
+         <input type="color">
+         <br>
+         <label for="">Range</label>
+         <input type="range" name="" id="price" min="0" max="100" value="" style="width:70%;" onchange="getValue()">
+         <h3 id="res"></h3>
+         <br>
+         <input type="submit"value="submit">
+    </form>
+    <script>
+        var pr=document.getElementById('price');
+        var out=document.getElementById('res');
+        // pr.addEventListener("change",function(){
+            // out.innerText=pr.value;}
+     function getValue(){
+        out.innerText=`price=${pr.value}`;
+     }
+     getValue()
+        
+
+    </script>
+</body>
+</html>

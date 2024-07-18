@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .heading{
+            background-color: cadetblue;
+            height: 60px;
+            width: 100%;
+            padding: 0px 20px 0px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            font-size: 2em;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .menu a{
+            text-decoration: none;
+            background-color: white;
+            padding: 8px 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Class selector</h1>
+    <Header  class="heading">
+        <a href="#" class="logo">Logo here</a>
+        <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+
+        </nav>
+    </Header>
+    <section class="container">
+        <div class="home">
+            <h1 class="name">Balaiahgari Bhavitha</h1>
+            <h3 class="job">Developer</h3>
+        </div>
+        <div class="about">
+            <h3 class="about-title">About Me</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima labore sunt harum eaque tenetur natus, sequi eius, hic dicta, esse mollitia aperiam quam asperiores rem aspernatur obcaecati voluptate. Repudiandae, quia.</p>
+        </div>
+        <div class="contact">
+            <h3 class="contact-title">Contact Us</h3>
+        </div>
+
+    </section>
+</body>
+</html>

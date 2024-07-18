@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width:100%;
+            height:35px;
+            margin-top:6px;
+            background-color: black;
+            color:white;
+        }
+        .container{
+            display:grid;
+            height:55vh;
+            width:75vw;
+            grid-template-columns: repeat(15,1fr);
+            grid-template-rows: repeat(5,1fr);
+            grid-row-gap: 2px;
+            grid-column-gap:2px;
+            border:2px solid black;
+            margin-top:2px;
+        }
+
+        .box{
+            border:2px solid black;
+            padding:4px;
+            height: 50px;
+            width: 50px;
+            text-align:center;
+            background-color: black;
+            color:white;
+        }
+
+        #box43{
+            grid-column-start:13;
+            grid-column-end:16;
+            width:179px;
+        }
+
+        #box44{
+            grid-column-start:1;
+            grid-column-end:3;
+            width:115px;
+        }
+
+        #box56{
+            grid-column-start:14;
+            grid-column-end:16;
+            width:115px;
+        }
+
+        #box61{
+            grid-column-start:5;
+            grid-column-end:10;
+            width:306px;
+        }
+
+        .container1{
+            display:grid;
+            height:55vh;
+            width:20vw;
+            margin-left: 1150px;
+            position: relative;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-row-gap: 2px;
+            grid-column-gap:2px;
+            border:2px solid black;
+            margin-top:2px;
+            bottom:432px; 
+        }
+
+        .block{
+            border:2px solid white;
+            background-color:black;
+            color:white;
+            text-align:center;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <div class="container">
+    <div id="box1" class="box"><p>Esc</p></div>
+    <div id="box2" class="box"><p>~<br>`</p></div>
+    <div id="box3" class="box"><p>!<br>1</p></div>
+    <div id="box4" class="box"><p>@<br>2</p></div>
+    <div id="box5" class="box"><p>#<br>3</p></div>
+    <div id="box6" class="box"><p>$<br>4</p></div>
+    <div id="box7" class="box"><p>%<br>5</p></div>
+    <div id="box8" class="box"><p>^<br>6</p></div>
+    <div id="box9" class="box"><p>&<br>7</p></div>
+    <div id="box10" class="box"><p>*<br>8</p></div>
+    <div id="box11" class="box"><p>(<br>9</p></div>
+    <div id="box12" class="box"><p>)<br>0</p></div>
+    <div id="box13" class="box"><p>_<br>-</p></div>
+    <div id="box14" class="box"><p>+<br>=</p></div>
+    <div id="box15" class="box"><p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M360-200q-20 0-37.5-9T294-234L120-480l174-246q11-16 28.5-25t37.5-9h400q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H360Zm400-80v-400 400Zm-400 0h400v-400H360L218-480l142 200Zm96-40 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Z"/></svg></p></div>
+    <div id="box16" class="box"><p>Tab</p></div>
+    <div id="box17" class="box"><p>q</p></div>
+    <div id="box18" class="box"><p>w</p></div>
+    <div id="box19" class="box"><p>e</p></div>
+    <div id="box20" class="box"><p>r</p></div>
+    <div id="box21" class="box"><p>t</p></div>
+    <div id="box22" class="box"><p>y</p></div>
+    <div id="box23" class="box"><p>u</p></div>
+    <div id="box24" class="box"><p>i</p></div>
+    <div id="box25" class="box"><p>o</p></div>
+    <div id="box26" class="box"><p>p</p></div>
+    <div id="box27" class="box"><p>{<br>[</p></div>
+    <div id="box28" class="box"><p>}<br>]</p></div>
+    <div id="box29" class="box"><p>|<br>\</p></div>
+    <div id="box30" class="box"><p>Del</p></div>
+    <div id="box31" class="box"><p>Caps</p></div>
+    <div id="box32" class="box"><p>a</p></div>
+    <div id="box33" class="box"><p>s</p></div>
+    <div id="box34" class="box"><p>d</p></div>
+    <div id="box35" class="box"><p>f</p></div>
+    <div id="box36" class="box"><p>g</p></div>
+    <div id="box37" class="box"><p>h</p></div>
+    <div id="box38" class="box"><p>j</p></div>
+    <div id="box39" class="box"><p>k</p></div>
+    <div id="box40" class="box"><p>l</p></div>
+    <div id="box41" class="box"><p>:<br>;</p></div>
+    <div id="box42" class="box"><p>"<br>'</p></div>
+    <div id="box43" class="box"><p>Enter</p></div>
+    <div id="box44" class="box"><p>Shift</p></div>
+    <div id="box45" class="box"><p>z</p></div>
+    <div id="box46" class="box"><p>x</p></div>
+    <div id="box47" class="box"><p>c</p></div>
+    <div id="box48" class="box"><p>v</p></div>
+    <div id="box49" class="box"><p>b</p></div>
+    <div id="box50" class="box"><p>n</p></div>
+    <div id="box51" class="box"><p>m</p></div>
+    <div id="box52" class="box"><p><<br>,</p></div>
+    <div id="box53" class="box"><p>><br>.</p></div>
+    <div id="box54" class="box"><p>?<br>/</p></div>
+    <div id="box55" class="box"><p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg></p></div>
+    <div id="box56" class="box"><p>Shift</p></div>
+    <div id="box57" class="box"><p>Fn</p></div>
+    <div id="box58" class="box"><p>Ctrl</p></div>
+    <div id="box59" class="box"><p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm320-320v240h240v-240H520Zm0-80h240v-240H520v240Zm-80 0v-240H200v240h240Zm0 80H200v240h240v-240Z"/></svg></p></div>
+    <div id="box60" class="box"><p>Alt</p></div>
+    <div id="box61" class="box"><p></p></div>
+    <div id="box62" class="box"><p>Alt</p></div>
+    <div id="box63" class="box"><p>Ctrl</p></div>
+    <div id="box64" class="box"><p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg></p></div>
+    <div id="box65" class="box"><p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></p></div>
+    <div id="box66" class="box"><p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></p></div>
+    <div id="box67" class="box"><p><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></p></div>
+    </div>
+
+    <div class="container1">
+        <div id="block1" class="block"><p>Home</p></div>
+        <div id="block2" class="block"><p>PgUp</p></div>
+        <div id="block3" class="block"><p>Nav</p></div>
+        <div id="block4" class="block"><p>End</p></div>
+        <div id="block5" class="block"><p>PgDn</p></div>
+        <div id="block6" class="block"><p>MvUp</p></div>
+        <div id="block7" class="block"><p>Insert</p></div>
+        <div id="block8" class="block"><p>Pause</p></div>
+        <div id="block9" class="block"><p>MvDn</p></div>
+        <div id="block10" class="block"><p>PrtScn</p></div>
+        <div id="block11" class="block"><p>scrLk</p></div>
+        <div id="block12" class="block"><p>Dock</p></div>
+        <div id="block13" class="block"><p>options</p></div>
+        <div id="block14" class="block"><p>Help</p></div>
+        <div id="block15" class="block"><p>Fade</p></div>
+    </div>
+</body>
+</html>

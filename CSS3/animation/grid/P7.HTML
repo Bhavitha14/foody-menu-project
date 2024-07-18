@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            display: grid;
+            grid-template-areas: "toph toph toph"
+                                 "lside blk rside"
+                                  "ft ft ft";
+            grid-template-columns: 50px 1fr 100px ;
+            grid-template-rows: 50px 1fr 50px;
+        }
+        .heading{background-color: teal;}
+        .foot{background-color: #888;color: #fff;}
+        .left,.right{background-color: gold;}
+
+
+        .heading{grid-area: toph;}
+        .left{grid-area: lside;}
+        .right{grid-area: rside;}
+        .container{ grid-area:blk;}
+        .foot{grid-area:ft}
+    </style>
+</head>
+<body>
+    <header class="heading">
+        <h3>Header section</h3>
+
+    </header>
+    <aside class="left">
+        <p>left side</p>
+    </aside>
+    <div class="container">
+        <h2>Body section</h2>
+    </div>
+    <aside class="right">
+        <p>Right side</p>
+    </aside>
+    <footer class="foot">
+        <p>All Rightsreseverd  &copy; <strong id="yr"></strong></p>
+    </footer>
+    <script>
+        var y=document.getElementById("yr");
+        y.innerText=new Date().getFullYear();
+    </script>
+</body>
+</html>

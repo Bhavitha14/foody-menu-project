@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #ccc;
+    }
+    .container{
+        display: flex;
+    }
+
+
+    .card{
+        width: 200px;
+        height: 100%;
+        background-color:red;
+        color: #fff;
+        padding: 20px;
+        cursor: pointer;
+        transition: all 0.45;
+        margin: 20px;
+    }
+    /* .card :hover{
+        opacity: 0.2;
+        filter: blur(2px);
+    } */
+     .container:hover .card{
+        opacity:0.3;
+        filter: blur(3px);
+     }
+     .container .card:hover{
+        opacity: 1;
+        filter: blur(0px);
+     }
+</style>
+<body>
+   <section class="container">
+     <div class="card">
+        <h3>card heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit excepturi quidem dolorem odit facere adipisci fugiat voluptate fugit nulla! Sunt sed vel aperiam voluptas numquam quis id totam ullam.
+        Exercitationem voluptates impedit amet voluptas, nisi culpa quidem soluta corrupti magnam commodi quas ratione enim rem dolores quo ducimus illum error harum quis fugit excepturi atque dicta. Nihil, perferendis molestias!</p>
+    </div>
+    <div class="card">
+        <h3>card heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit excepturi quidem dolorem odit facere adipisci fugiat voluptate fugit nulla! Sunt sed vel aperiam voluptas numquam quis id totam ullam.
+        Exercitationem voluptates impedit amet voluptas, nisi culpa quidem soluta corrupti magnam commodi quas ratione enim rem dolores quo ducimus illum error harum quis fugit excepturi atque dicta. Nihil, perferendis molestias!</p>
+    </div>
+    <div class="card">
+        <h3>card heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit excepturi quidem dolorem odit facere adipisci fugiat voluptate fugit nulla! Sunt sed vel aperiam voluptas numquam quis id totam ullam.
+        Exercitationem voluptates impedit amet voluptas, nisi culpa quidem soluta corrupti magnam commodi quas ratione enim rem dolores quo ducimus illum error harum quis fugit excepturi atque dicta. Nihil, perferendis molestias!</p>
+    </div>
+   </section>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input:user-valid{
+            border:2px solid green;
+            outline: none;
+        } */
+        input:valid{
+            border: 2px solid green ;
+            outline: none;
+        }
+        input:invalid{
+            border: 2px solid red;
+            outline: none;
+
+        }
+
+            
+    </style>
+</head>
+<body>
+    <h1>:user-valid</h1>
+    <form action="">
+        <label for="">enter email id </label>
+        <input type="email" name="email" id="email" required>
+        <span></span>
+
+        <br><br> 
+        <label for="">enter password</label>
+        <input type="password" name="password"pattern="[a-z A-Z $]+" id="password"   required>
+    </form>
+</body>
+</html>

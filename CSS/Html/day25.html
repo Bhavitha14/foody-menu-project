@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            text-align: center;
+        }
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <!-- table,tr,th,td,(thead),(tbody,tfoot )-->
+     <!-- attr- colspan,rowspan -->
+     <table>
+        <thead>
+            <tr >
+                <th colspan="6" ><b>Time Table</b></th>
+            </tr>
+            <tr>
+                <th rowspan="7"><b>Hours</b></th>
+                <th>mon</th>
+                <th>tue</th>
+                <th>wed</th>
+                <th>thu</th>
+                <th>fri</th>
+            </tr>
+            <tr>
+                <td>sci</td>
+                <td>math</td>
+                <td>soc</td>
+                <td>phy</td>
+                <td>che</td>
+            </tr>
+            <tr>
+                <td>che</td>
+                <td>mat</td>
+                <td>phy</td>
+                <td>sci</td>
+                <td>soc</td>
+            </tr>
+            <tr>
+                <th colspan="5">Lunch  Break</th>
+            </tr>
+            <tr>
+                <td>mat</td>
+                <td>che</td>
+                <td>phy</td>
+                <td>soc</td>
+                <td>sci</td>
+            </tr>
+            <tr>
+                <td>sci</td>
+                <td>soc</td>
+                <td>mat</td>
+                <td>che</td>
+                <th rowspan="2">Project</th>
+            </tr>
+            <tr>
+                <td>mat</td>
+                <td>sci</td>
+                <td>soc</td>
+                <td>phy</td>
+            </tr>
+        </thead>
+     </table>
+</body>
+</html>

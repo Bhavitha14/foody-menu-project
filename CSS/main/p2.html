@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        body{
+            margin:0;
+            overflow:hidden;
+            height:100vh;
+        }
+
+        .container{
+            width:100%;
+            height:100vh;
+            background-image: url('https://picsum.photos/id/234/1200/800');
+            position: relative;
+        }
+
+        .container .box{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            width:400px;
+            height:200px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:rgba(255,68,0,0.3);
+            backdrop-filter:blur(10px);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>backdrop-filter</h1>
+
+    <div class="container">
+        <div class="box">
+            <h1>Welcome to Css</h1>
+        </div>
+    </div>
+</body>
+</html>

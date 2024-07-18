@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container,.container1 {
+            background: rebeccapurple;
+            padding: 20px;
+        }
+        .card,.card1{
+            width:200px;
+            background: orange;
+            padding: 20px;
+        }
+        /* general  */
+        .card ~ p{
+            background: #fff;
+            padding: 10px;
+        }
+        /* adjacent */
+        .card1 + p
+        {
+          background: #fff;
+          padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>General sibling(~) and adjacent sibling(+)</h1>
+
+    <section class="container">
+        <div class="card">
+            <h1>card title</h1>
+            <p>paragraph inside card</p>
+        </div>
+        <p>line-1</p>
+        <p>line-2</p>
+        <p>line-3</p>
+    </section>
+
+
+    <hr>
+
+
+    <section class="container1">
+        <div class="card1">
+            <h1>card title</h1>
+            <p>paragraph inside card</p>
+        </div>
+        <p>line-1</p>
+        <p>line-2</p>
+        <p>line-3</p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            animation-name: bounce;/* name of the keyframe*/
+            animation-duration: 5s;/* time to complie 1 cycle of animation*/
+            animation-delay: 3s;/* delay time before to start animation*/
+            animation-direction: normal;/* direction of animation*/
+            animation-iteration-count: infinite;/* number of animation cycle*/
+            animation-play-state: running;/* direction of animation*/
+        }
+        @keyframes bounce {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(200px,300px);
+    }
+    50%{
+        transform: translate(400px,0px);
+    }
+    75%{
+        transform: translate(600px,300px);
+    }
+    
+    100%{
+        transform: translate(0px,0px);
+    }
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>animation-play-state</h3>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <div class="ball"></div>
+
+    <script>
+        var play=document.getElementById("play");
+        var pause=document.getElementById("pause");
+        var ball=document.querySelector(".ball");
+
+        play.onclick=function(){
+            ball.style.animationPlayState="running";
+        }
+        pause.onclick=function(){
+            ball.style.animationPlayState="paused";
+        }
+    </script>
+</body>
+</html>

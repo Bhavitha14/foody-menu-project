@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: #ddd;
+            height:60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+        nav a{
+            padding: 10px 12px;
+            text-decoration: none;
+            background-color: #222;
+            color: #fff;
+        }
+        nav a:hover{
+            background-color: #fff;
+            color: #222;
+        }
+        nav a:focus{
+            background-color: orange;
+            color:#fff;
+
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .container div{
+            height: 300px;
+        }
+        .container div:target{
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>:focus & :target </h1>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <section class ="container">
+        <div id="Home">
+            <h1>Home section</h1>
+        </div>
+        <div id="About">
+            <h1>About Section</h1>
+        </div>
+        <div id="Contact">
+            <h1> about contact</h1>
+        </div>
+    </section>
+</body>
+</html>

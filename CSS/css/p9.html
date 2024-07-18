@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container, .container1{
+            height:80vh;
+            width:100%;
+            background:#ccc;
+            
+
+        }
+        .container .card{
+            width:200px;
+            height:200px;
+            border: 2px solid #222;
+            color:#222;
+            padding: 20px;
+        }
+        .container1 > .card1{
+            width:200px;
+            height:200px;
+            border: 2px solid #222;
+            color:#222;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Decendant</h1>
+    <section class="container">
+        <div class="card">
+            <h3>first child</h3>
+            <div class="card">
+                <h3>Child card</h3>
+            </div>
+            <div class="card">
+                <h3>grand child</h3>
+            </div>
+        </div>
+    </section>
+    <section class="container1">
+        <div class="card1">
+            <h3>first child</h3>
+            <div class="card1">
+                <h3>Child card</h3>
+            </div>
+            <div class="card1">
+                <h3>grand child</h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

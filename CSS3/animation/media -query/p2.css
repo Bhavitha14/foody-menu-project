@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.containers{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+.header{
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+}
+.logo{
+    width: 20%;
+    background-color: blueviolet;
+
+}
+.menu{
+    width:80
+}

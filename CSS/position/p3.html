@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        . body{
+            margin : 0;
+            overflow-x: hidden;
+        }
+        .container{
+            height : 100%;
+            width: 100vw;
+            background-color : #777;
+            padding : 20px;
+
+        }
+
+        .first{
+            width: 80%;
+            height: 80vh;
+            background-color: green;
+            padding: 20px;
+        }
+        .second{
+            width: 60%;
+            height: 60vh;
+            background-color:orangered;
+            padding: 20px;
+        }
+        .third{
+            width: 40%;
+            height: 40vh;
+            background-color:red;
+            padding: 20px;
+        }
+        .fourth{
+            width: 20%;
+            height: 20vh;
+            background-color: purple;
+            padding: 20px; 
+            position: relative;    
+            /* obsoulte */
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="first">1
+            <div class="second">2
+                <div class="third">3
+                    <div class="fourth">4
+                         </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

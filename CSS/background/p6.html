@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:500px;
+            padding: 20px;
+        }
+        .b1,.b2,.b3,.b4{
+            width: 500px;
+            height:400px;
+            padding: 20px;
+            margin:10px;
+            background-image:url('./panel1.jpg') ;
+            border: 10px dished #ccc;
+            background-repeat: no-repeat;
+        }
+        h1{
+            font-size: 4rem;
+
+        }
+        .b1{
+            background-origin: border-box;
+        }
+        .b2{
+            background-origin: padding-box;
+        }
+        .b3{
+            background-origin: content-box;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <h1>background orgin</h1>
+    <section class="container">
+        <div class="b1">
+            <h1>Welcome to CSS</h1>
+
+        </div>
+        <div class="b2">
+            <h1>Welcome to CSS</h1>
+
+        </div>
+        <div class="b3">
+            <h1>Welcome to CSS</h1>
+
+    </section>
+</body>
+</html>
