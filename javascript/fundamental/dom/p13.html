@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.activeElement</h1>
+    <form action="">
+        <textarea onmouseup="handler(event)" name="msg1" id="msg1" cols="30" rows="6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis ad quia similique voluptatum repellat provident explicabo eum aut cumque minus. Mollitia nesciunt fugiat recusandae quisquam inventore blanditiis aperiam commodi molestiae!
+        </textarea>
+        <hr>
+        <textarea onmouseup="handler(event)" name="msg2" id="msg2" cols="30" rows="6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis ad quia similique voluptatum repellat provident explicabo eum aut cumque minus. Mollitia nesciunt fugiat recusandae quisquam inventore blanditiis aperiam commodi molestiae!
+        </textarea>
+        
+    </form>
+    <hr>
+    <script>
+        //document.activeElement is a readonly property
+        function handler(event){
+            let selEL = document.activeElement;
+            console.log(`selected element`,selEL);
+        let msg=selEL.value;
+            console.log(`text=`,msg)
+
+            let selTxt=msg.substring(selEL.selectionStart,selEL.selectionEnd);
+            console.log(`selected text=`,selEL)
+
+        }
+
+    </script>
+</body>
+</html>

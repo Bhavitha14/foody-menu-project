@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>document.querySelectors</h1>
+    <!-- query selector is used to taget tag ,class, id -->
+    <h3>heading sample text</h3>
+    <h4 class="txt">welcome to javscript</h4>
+    <h2 id="title">Hello world</h2>
+    <h3>heading sample text</h3>
+    <h2 id="title">Hello world</h2>
+    <h4 class="txt">welcome to javscript</h4>
+    <h3>heading sample text</h3>
+    <h3>heading sample text</h3>
+    <script>
+        //document.querySelectorAll(tagname/class/id)
+        let sel=document.querySelectorAll("h3");
+        sel.forEach(element => {
+            element.style.color="red";
+        });
+        let sam= document.querySelectorAll(".txt");
+        sam.forEach(element => {
+            element.style.color="green";
+        });
+       
+        let samp=document.querySelectorAll("#title");
+        samp.forEach(element => {
+            element.style.color="blue";
+        });
+
+    </script>
+</body>
+</html>

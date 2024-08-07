@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #blk{
+        width: 200px;
+        height: 200px;
+        background-color: teal;
+        color: #fff;
+        padding: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+    }
+</style>
+<body>
+    <h1>getelementnyid()</h1>
+    <button onclick="handler()">insert</button>
+    <div id="blk">
+
+    </div>
+    <script>
+        function handler() {
+            document.getElementById("blk").innerHTML ="<img src='https://picsum.photos/id/123/200/200'>";
+        }
+    </script>
+</body>
+</html>

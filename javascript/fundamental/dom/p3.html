@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Table</title>
+</head>
+<body>
+    <h1>Print the Math Table</h1>
+
+    <button onclick="generateTable()">Enter Number and Generate Table</button>
+
+    <script>
+        function generateTable() {
+            const number = prompt("Enter a number:");
+            // prompt is used to allow the user to input data
+
+        //    parseInt(convert its first agru to a string ,parses that string ,then return an interger or nan)
+
+            const num = parseInt(number);
+           
+
+            document.write('<h2>Multiplication Table for ' + num + '</h2>');
+            
+            for (let i = 1; i <= 10; i++) {
+                const result = num * i;
+                document.write(num + ' x ' + i + ' = ' + result + '<br>');
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

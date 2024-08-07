@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RequestFullscreen and exitFullscreen</h1>
+    <!-- <video src="" id="cartoon" width="300" height="300"></video> -->
+    <button id="fs">FullScreen</button>
+    <script>
+        document.getElementById('fs').onclick=function(event){
+            //fullscreen is enabled or not
+            if(document.fullscreenElement){
+                document.exitFullscreen().then(res =>{
+                    console.log(" document  is Exited  from full screen mode" );
+                    document.getElementById('fs').innerText="enter fullscreen ";
+
+                }).catch(err =>console.log(err));
+            }
+            else{
+                document.documentElement.requestFullscreen().then(res =>{
+                    console.log("document  is Entered  into full screen mode" );
+                    document.getElementById('fs').innerText="Exit fullscreen ";
+                }).catch(err =>console.log(err)
+                );
+            }
+        }    </script>
+</body>
+</html>
